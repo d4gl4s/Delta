@@ -2,15 +2,70 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Delta</title>
   </head>
   <div class="taust">
   <body>
-    
-    <h1>Delta keskuse pealeht</h1>
-    <p>Siin leheküljel on huvitavaid fakte Tartu Ülikooli Delta keskuse kohta</p>
-    <p>Asukoht: Narva mnt 18 <br>Hoone kõrgeim punkt: 20 meetrit<br>Üldpind: 17500 m<sup>2</sup></p>
-    <p>Delta keskuse toalettruumide hinnangud - <a href="vaheleht.html">edetabel</a></p></div>
-  </body></div>
+    <main>
+      <section id="ava">
+        <h1>Delta hoone</h1>
+        <img src="assets/hoone1.jpg" alt="Pilt Delta hoonest">
+        <p class="kirjeldus" onclick='document.getElementById("tutvustus").scrollIntoView({behavior: "smooth"})'>Uuri Lisa</p>
+      </section>
+
+      <section id="tutvustus">
+        <h2>Tutvustus</h2>
+        <p class="kirjeldus">Vajuta piltidele ja liigu ringi mööda Delta hoonet.</p>
+        <p>
+         Delta on Tartu Ülikooli uudne õppe-ja teaduskeskus, mille huvi keskmes on ülikooli, ühiskonna ja ettevõtete koostöö. Deltas tegutseb üle 3000 üliõpilase, õppejõu, professori ja teadlase. Deltat ümbritseb kaunis loodus ning palju aktiivse elu võimalusi. Delta hoone koondab kokku IT-erialade, matemaatika ning majandusõppe ühes hoones, soodustades head valdkonnaülest koostööd nii õppetöös kui ka teadustegevuses.
+        </p>
+        <div>
+          <span>Avatud aastal </span>
+            <span id="aasta" class="number">2019</span>
+        </div>
+        <div>
+          <span>Korruseid</span>
+            <span id="korruseid" class="number">4</span>
+        </div>
+        <div>
+          <span>Maksumus</span>
+            <span id="maksumus" class="number">27.9 miljonit</span>
+        </div>
+      </section>
+
+      <section id="pildid">
+        <h2>Pilte Delta hoonest</h2>
+        <p class="kirjeldus">Vajuta piltidele ja liigu ringi mööda Delta hoonet.</p>
+        <div id="pildidDesktop">
+          <div id="piltSuur">
+            <img src="assets/hoone2.jpg" alt="Pilt Delta hoonest" id="piltSuurElement">
+          </div>
+          <div id="pildidVäiksed">
+            <img src="assets/hoone2.jpg" id="0" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
+            <img src="assets/hoone3.jpg" id="1" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
+            <img src="assets/hoone5.jpg" id="2" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
+            <img src="assets/hoone6.jpg" id="3" class="portraitImage"  alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
+            <img src="assets/hoone7.jpg" id="4" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p class="kirjeldus" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Tagasi Algusesse</p>
+      </footer>
+      
+    </main>
+  </body>
+  <script>
+    function muudaPilti(src, id){
+      document.getElementById("piltSuurElement").src=src;
+      console.log(src)
+      if (id == "3"){
+        document.getElementById("piltSuurElement").classList.add("portraitImage");
+      }else{
+        document.getElementById("piltSuurElement").classList.remove("portraitImage");
+      }
+    }
+  </script>
 </html>
