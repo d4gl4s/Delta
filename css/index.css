@@ -3,6 +3,11 @@ main {
   margin: auto;
 }
 
+.link {
+  color: #8a72ac;
+  font-weight: 600;
+  margin-left: 1em;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -55,21 +60,22 @@ h1 {
 }
 #tutvustus div {
   width: 100%;
-  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+#tutvustus div div {
+  width: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 .number {
   font-size: 1.4em;
-  margin-left: 1em;
-  font-weight: 700;
-}
-#aasta {
-  color: #72ac83;
-}
-#korruseid {
-  color: #8a72ac;
-}
-#maksumus {
-  color: #df8a8a;
+  margin-left: 0.5em;
+  font-weight: 600;
+  color: #e16f93;
 }
 
 #pildidDesktop {
