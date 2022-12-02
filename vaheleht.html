@@ -6,14 +6,62 @@
     <link rel="stylesheet" href="css/vaheleht.css" />
     <title>Delta</title>
   </head>
+  <div class="taust">
   <body>
+    <main>
+      hinnang0 =<p>+ Ruumikas mitmete tualettruumidega <br>+ Igas tualettruumis on kraanikauss <br>+ Suur peegel <br>- Vahetundide ajal tihti ülerahvastatud <br>- Mõnikord on paber otsas</p>
     <section id="ava">
       <h1>Delta tualettruumide edetabel</h1>
     </section>
     <section id="tutvustus">
       <p>
-        Deltas on palju tualettruume. Siin lehel on välja toodud Delta tualettruumide hinnangud, et tudengid saaksid neist parema ülevaate.
-      </p>
+        Deltas on palju tualettruume. Siin lehel on välja toodud Delta tualettruumide hinnangud, et tudengid saaksid neist parema ülevaate.</p>
+      </section>
+
+    <section id="pildid">
+      <h2>Edetabel</h2>
+      <p class="kirjeldus">Pildile vajutades leiad ülevaate vastavale tualettruumile</p>
+      <div id="pildidDesktop">
+        <div id="piltSuur">
+          <img src="assets/tualett_2048.jpg" alt="Pilt tualettruumist" id="piltSuurElement">
+        </div>
+        <div id="pildidVäiksed">
+          <img src="assets/tualett_2048.jpg" id="0" alt="Pilt tualettruumist" onclick="muudaPilti(this.src, this.id);muudaHinnangut(hinnang0)">
+          <img src="assets/tualett_köök.jpg" id="1" alt="Pilt tualettruumist" onclick="muudaPilti(this.src, this.id);muudaHinnangut(hinnang1)">
+          <img src="assets/tualett_raamatukogu.jpg" id="2" alt="Pilt tualettruumist" onclick="muudaPilti(this.src, this.id);muudaHinnangut(hinnang2)">
+          <img src="assets/tualett_robootika.jpg" id="3" class="portraitImage" alt="Pilt tualettruumist"  onclick="muudaPilti(this.src, this.id);muudaHinnangut(hinnang3)">
+          <img src="assets/tualett_sissepääs.jpg" id="4" alt="Pilt tualettruumist" onclick="muudaPilti(this.src, this.id);muudaHinnangut(hinnnang4)">
+        </div>
+      </div>
     </section>
+
+ 
+      <!--hinnang0 =<p>+ Ruumikas mitmete tualettruumidega <br>+ Igas tualettruumis on kraanikauss <br>+ Suur peegel <br>- Vahetundide ajal tihti ülerahvastatud <br>- Mõnikord on paber otsas</p>
+      hinnang1=<p> + Lähedal köögile <br>- Vähe tualettruume <br>- Vahetundidel tihti ülerahvastatud <br>- Põrand tihti märg</p>
+      hinnang2=<p> +Ei ole vahetundide ajal ülerahvastatud <br>+ Rahulikum tualett võrreldes teistega <br>+ Igas tualettruumis on kraanikauss<br>- Vähe tualettruume</p>
+      hinnang3=> + Kohe sissepääsu lähedal <br>- Vahetundide ajal mõnikord ülerahvastatud</p>
+      </div>-->
+    </section>
+    <p id="hinnang"></p>
+    <footer>
+      <p class="kirjeldus" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Tagasi Algusesse</p>
+    </footer>
+
+  </main>
   </body>
+  <script>
+    function muudaPilti(src, id){
+      document.getElementById("piltSuurElement").src=src;
+      console.log(src)
+      if (id == "3"){
+        document.getElementById("piltSuurElement").classList.add("portraitImage");
+      }else{
+        document.getElementById("piltSuurElement").classList.remove("portraitImage");
+      }
+    }
+    function muudaHinnangut(tekst){
+      document.getElementById("hinnang").innerHTML =  tekst;
+
+      }
+  </script>
 </html>
