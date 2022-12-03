@@ -10,8 +10,10 @@
   <body>
     <main>
       <section id="ava">
-        <h1>Delta hoone</h1>
-        <img src="assets/hoone1.jpg" alt="Pilt Delta hoonest">
+        <div>
+          <h1>Delta hoone</h1>
+          <img src="assets/hoone1tt.png" alt="Pilt Delta hoonest">
+        </div>
         <p class="kirjeldus" onclick='document.getElementById("tutvustus").scrollIntoView({behavior: "smooth"})'>Uuri Lisa</p>
       </section>
 
@@ -21,21 +23,21 @@
         <p>
          Delta on Tartu Ülikooli uudne õppe-ja teaduskeskus, mille huvi keskmes on ülikooli, ühiskonna ja ettevõtete koostöö. Deltas tegutseb üle 3000 üliõpilase, õppejõu, professori ja teadlase. Deltat ümbritseb kaunis loodus ning palju aktiivse elu võimalusi. Delta hoone koondab kokku IT-erialade, matemaatika ning majandusõppe ühes hoones, soodustades head valdkonnaülest koostööd nii õppetöös kui ka teadustegevuses.
         </p>
-        <div>
-          <div>
+        <div id="tutvustavadAndmed">
+          <div class="tutvustavInfo">
             <span>Avatud aastal </span>
               <span id="aasta" class="number">2019</span>
           </div>
-          <div>
+          <div class="tutvustavInfo">
             <span>Korruseid</span>
               <span id="korruseid" class="number">4</span>
           </div>
-          <div>
+          <div class="tutvustavInfo">
             <span>Maksumus</span>
               <span id="maksumus" class="number">27.9 milj</span>
           </div>
         </div>
-        <div><p>Delta keskuse tualettruumide hinnangud: <a href="vaheleht.html" class="link">Edetabel</a></p></div>
+        <div id="vaheleheLink"><p>Delta keskuse tualettruumide hinnangud: <a href="vaheleht.html" class="link">Edetabel</a></p></div>
       </section>
 
       <section id="pildid">
