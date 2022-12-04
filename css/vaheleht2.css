@@ -1,0 +1,47 @@
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 10vh;
+    width: 100%;
+}
+section h2{
+    margin-bottom: 0.5em;
+}
+
+#ava {
+    margin-top: 10vh;
+    justify-content: space-between;
+    height: 30vh;
+    margin-bottom: 5vh;
+}
+
+#tutvustus {
+    width: 60%;
+    text-align: justify;
+    font-size: 0.9em;
+    font-weight: 400;
+    padding-top: 2vh;
+}
+
+.kirjeldus {
+    color: #b1afc2;
+    font-weight: 500;
+    font-size: 0.8em;
+    margin-bottom: 7em;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+footer p:hover {
+    color: #5f6e64;
+}
