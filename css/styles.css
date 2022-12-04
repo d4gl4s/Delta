@@ -9,7 +9,17 @@ body {
 main {
   width: 60%;
   margin: auto;
-  /*  background-color: #8a72ac; */
+}
+
+.link {
+  color: #8a72ac;
+  font-weight: 600;
+  margin-left: 0.5em;
+}
+.linkContainer {
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 2em;
 }
 
 a {
@@ -24,7 +34,9 @@ a {
 }
 h1 {
   font-size: 2.8em;
+  margin-top: 10vh;
 }
+
 img {
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
@@ -40,6 +52,39 @@ img {
   -o-user-select: none;
   user-select: none;
 }
+.kirjeldus {
+  color: #b1afc2;
+  font-weight: 500;
+  font-size: 0.8em;
+  margin-bottom: 9em;
+  margin-top: 0.3em;
+}
+button {
+  background-color: #8a72ac;
+  font-family: "Poppins", sans-serif;
+  transition: 0.1s ease;
+  color: white;
+  padding: 0.7em 1.5em;
+  margin-left: 1em;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #7a6893;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+footer p:hover {
+  color: #5f6e64;
+}
 
 ::selection {
   background: rgb(180, 234, 184);
@@ -47,13 +92,11 @@ img {
 @media (max-width: 1400.98px) {
   main {
     width: 80%;
-    /* background-color: aquamarine; */
   }
 }
 
 @media (max-width: 767.98px) {
   main {
     width: 100%;
-    /* background-color: rgb(196, 237, 223); */
   }
 }
