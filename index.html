@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="et">
   <head>
+    <title>Delta</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Delta</title>
+    <script src="js/index.js"></script>
   </head>
-  <div class="taust">
   <body>
     <main>
       <section id="ava">
         <div>
           <h1>Delta hoone</h1>
-          <img src="assets/hoone1tt.png" alt="Pilt Delta hoonest">
+          <img src="assets/hoone1tt.png" alt="Pilt Delta hoonest" />
         </div>
+
+        <!-- Elemendile vajutades, liigub lehel edasi kuni elemendini, mille id on 'tutvustus' -->
         <p class="kirjeldus" onclick='document.getElementById("tutvustus").scrollIntoView({behavior: "smooth"})'>Uuri Lisa</p>
       </section>
 
@@ -21,23 +23,27 @@
         <h2>Tutvustus</h2>
         <p class="kirjeldus">Vajuta piltidele ja liigu ringi mööda Delta hoonet.</p>
         <p>
-         Delta on Tartu Ülikooli uudne õppe-ja teaduskeskus, mille huvi keskmes on ülikooli, ühiskonna ja ettevõtete koostöö. Deltas tegutseb üle 3000 üliõpilase, õppejõu, professori ja teadlase. Deltat ümbritseb kaunis loodus ning palju aktiivse elu võimalusi. Delta hoone koondab kokku IT-erialade, matemaatika ning majandusõppe ühes hoones, soodustades head valdkonnaülest koostööd nii õppetöös kui ka teadustegevuses.
+          Delta on Tartu Ülikooli uudne õppe-ja teaduskeskus, mille huvi keskmes on ülikooli, ühiskonna ja ettevõtete koostöö. Deltas tegutseb üle 3000 üliõpilase, õppejõu, professori ja teadlase.
+          Deltat ümbritseb kaunis loodus ning palju aktiivse elu võimalusi. Delta hoone koondab kokku IT-erialade, matemaatika ning majandusõppe ühes hoones, soodustades head valdkonnaülest koostööd
+          nii õppetöös kui ka teadustegevuses.
         </p>
         <div id="tutvustavadAndmed">
           <div class="tutvustavInfo">
             <span>Avatud aastal </span>
-              <span id="aasta" class="number">2019</span>
+            <span id="aasta" class="number">2019</span>
           </div>
           <div class="tutvustavInfo">
             <span>Korruseid</span>
-              <span id="korruseid" class="number">4</span>
+            <span id="korruseid" class="number">4</span>
           </div>
           <div class="tutvustavInfo">
             <span>Maksumus</span>
-              <span id="maksumus" class="number">27.9 milj</span>
+            <span id="maksumus" class="number">27.9 milj</span>
           </div>
         </div>
-        <div class="linkContainer"><p>Delta keskuse tualettruumide hinnangud: <a href="vaheleht.html" class="link">Edetabel</a></p></div>
+        <div class="linkContainer">
+          <p>Delta keskuse tualettruumide hinnangud: <a href="vaheleht.html" class="link">Edetabel</a></p>
+        </div>
       </section>
 
       <section id="pildid">
@@ -45,32 +51,21 @@
         <p class="kirjeldus">Vajuta piltidele ja liigu ringi mööda Delta hoonet.</p>
         <div id="pildidDesktop">
           <div id="piltSuur">
-            <img src="assets/hoone2.jpg" alt="Pilt Delta hoonest" id="piltSuurElement">
+            <img src="assets/hoone2.jpg" alt="Pilt Delta hoonest" id="piltSuurElement" />
           </div>
           <div id="pildidVäiksed">
-            <img src="assets/hoone2.jpg" id="0" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
-            <img src="assets/hoone3.jpg" id="1" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
-            <img src="assets/hoone5.jpg" id="2" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
-            <img src="assets/hoone6.jpg" id="3" class="portraitImage"  alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
-            <img src="assets/hoone7.jpg" id="4" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)">
+            <img src="assets/hoone2.jpg" id="0" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)" />
+            <img src="assets/hoone3.jpg" id="1" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)" />
+            <img src="assets/hoone5.jpg" id="2" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)" />
+            <img src="assets/hoone6.jpg" id="3" class="portraitImage" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)" />
+            <img src="assets/hoone7.jpg" id="4" alt="Pilt Delta hoonest" onClick="muudaPilti(this.src, this.id)" />
           </div>
         </div>
       </section>
-      <footer>
-        <p class="kirjeldus" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Tagasi algusesse</p>
-      </footer>
-      
     </main>
+    <footer>
+      <!-- Elemendile vajutades, liigub lehel tagasi algusesse -->
+      <p class="kirjeldus" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Tagasi algusesse</p>
+    </footer>
   </body>
-  <script>
-    function muudaPilti(src, id){
-      document.getElementById("piltSuurElement").src=src;
-      console.log(src)
-      if (id == "3"){
-        document.getElementById("piltSuurElement").classList.add("portraitImage");
-      }else{
-        document.getElementById("piltSuurElement").classList.remove("portraitImage");
-      }
-    }
-  </script>
 </html>
