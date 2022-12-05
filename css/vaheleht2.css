@@ -24,10 +24,8 @@ section h2{
 #tutvustus {
     width: 70%;
     text-align: justify;
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-weight: 400;
-    padding-top: 2vh;
-    padding-left: 3vh;
 }
 
 #pildidDesktop {
@@ -76,11 +74,6 @@ section h2{
     font-weight: 500;
     font-size: 0.8em;
     margin-bottom: 7em;
-}
-.link {
-    color: #8a72ac;
-    font-weight: 600;
-    font-size: larger;
 }
 
 footer {
