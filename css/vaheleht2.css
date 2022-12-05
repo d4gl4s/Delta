@@ -14,11 +14,8 @@ section h2{
 #ava {
     margin-top: 10vh;
     justify-content: space-between;
-    height: 35vh;
+    height: 15vh;
     margin-bottom: 7vh;
-}
-#ava a:hover{
-    filter: brightness(70%);
 }
 
 #tutvustus {
