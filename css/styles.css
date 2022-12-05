@@ -87,7 +87,7 @@ footer p:hover {
 }
 
 ::selection {
-  background: rgb(180, 234, 184);
+  background: #d4e09b;
 }
 @media (max-width: 1400.98px) {
   main {
