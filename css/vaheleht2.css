@@ -1,82 +1,102 @@
-
 section {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    margin-bottom: 15vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 15vh;
+  width: 100%;
 }
-
 
 #tutvustus {
-    width: 60%;
-    text-align: justify;
-    font-size: 0.9em;
-    font-weight: 400;
+  width: 60%;
+  text-align: justify;
+  font-size: 0.9em;
+  font-weight: 400;
 }
 #tutvustus h1 {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 #pildidDesktop {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 #piltSuur {
-    width: 90%;
-    display: flex;
+  width: 90%;
+  display: flex;
 }
 #piltSuur img {
-    width: 80%;
-    margin: auto;
+  width: 60%;
+  margin: auto;
+  max-height: 80vh;
+  max-width: 60vh;
 }
 
 #pildidVäiksed {
-    width: 9%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3vh;
+  width: 9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 3vh; */
 }
 #pildidVäiksed img {
-    transition: 0.4s ease;
-    backface-visibility: hidden;
-    width: 100%;
-    cursor: pointer;
-    margin-bottom: 0.7em;
+  transition: 0.4s ease;
+  backface-visibility: hidden;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 0.7em;
 }
 #pildidVäiksed img:hover {
-    opacity: 0.5;
-    width: 105%;
+  opacity: 0.5;
 }
 #pildidVäiksed img:active {
-    opacity: 0.7;
-    filter: brightness(0.7);
-    width: 107%;
+  opacity: 0.7;
+  filter: brightness(0.7);
+  /* width: 107%; */
 }
 #pildidVäiksed .portraitImage {
-    width: 100%;
+  width: 100%;
 }
 
 .kirjeldus {
-    color: #b1afc2;
-    font-weight: 500;
-    font-size: 0.8em;
-    margin-bottom: 7em;
+  color: #b1afc2;
+  font-weight: 500;
+  font-size: 0.8em;
+  margin-bottom: 7em;
 }
 
 footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 footer p {
-    padding-top: 5vh;
-    cursor: pointer;
-    transition: 0.1s ease;
+  padding-top: 5vh;
+  cursor: pointer;
+  transition: 0.1s ease;
 }
 footer p:hover {
-    color: #5f6e64;
+  color: #5f6e64;
+}
+@media (max-width: 767.98px) {
+  #tutvustus {
+    width: 80%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #tutvustus {
+    width: 90%;
+  }
+  #pildidDesktop {
+    width: 90%;
+  }
+  #piltSuur img {
+    width: auto;
+    height: 70vh;
+    max-width: 80%;
+    max-height: 400px;
+    min-height: 400px;
+  }
 }

@@ -19,7 +19,10 @@ main {
 .linkContainer {
   align-items: flex-start;
   width: 100%;
-  margin-top: 2em;
+  margin-top: 2.5em;
+}
+.linkContainer p {
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -35,6 +38,7 @@ a {
 h1 {
   font-size: 2.8em;
   margin-top: 10vh;
+  text-align: left;
 }
 
 img {

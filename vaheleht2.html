@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <title>Delta köök</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/vaheleht2.css" />
-    <title>Delta köök</title>
+    <script src="js/vaheleht2.js"></script>
   </head>
   <body>
     <main>
@@ -21,30 +22,19 @@
         <p class="kirjeldus">Pildile vajutades saad vaadata erinevaid retsepte</p>
         <div id="pildidDesktop">
           <div id="piltSuur">
-            <img src="assets/retsept1.png" alt="Retsepti pilt" id="piltSuurElement">
+            <img src="assets/retsept1.png" class="portraitImage" alt="Retsepti pilt" id="piltSuurElement" />
           </div>
           <div id="pildidVäiksed">
-            <img src="assets/retsept1.png" alt="Retsepti pilt" class="portraitImage" onclick="muudaPilti(this.src, this.id)">
-            <img src="assets/retsept2.png" alt="Retsepti pilt" class="portraitImage" onclick="muudaPilti(this.src, this.id)">
-            <img src="assets/retsept3.png" alt="Retsepti pilt" class="portraitImage" onclick="muudaPilti(this.src, this.id)">
+            <img src="assets/retsept1.png" alt="Retsepti pilt" onclick="muudaPilti(this.src, this.id)" />
+            <img src="assets/retsept2.png" alt="Retsepti pilt" onclick="muudaPilti(this.src, this.id)" />
+            <img src="assets/retsept3.png" alt="Retsepti pilt" onclick="muudaPilti(this.src, this.id)" />
           </div>
         </div>
       </section>
     </main>
-    <hr/>
     <footer>
+      <!-- Elemendile vajutades, liigub lehel tagasi algusesse -->
       <p class="kirjeldus" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Tagasi Algusesse</p>
     </footer>
   </body>
-  <script>
-    function muudaPilti(src, id){
-      document.getElementById("piltSuurElement").src=src;
-      console.log(src)
-      if (id == "3"){
-        document.getElementById("piltSuurElement").classList.add("portraitImage");
-      }else{
-        document.getElementById("piltSuurElement").classList.remove("portraitImage");
-      }
-    }
-  </script>
 </html>
