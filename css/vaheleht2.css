@@ -7,22 +7,16 @@ section {
     margin-bottom: 15vh;
     width: 100%;
 }
-section h2{
-    margin-bottom: 0.5em;
-}
 
-#ava {
-    margin-top: 10vh;
-    justify-content: space-between;
-    height: 15vh;
-    margin-bottom: 7vh;
-}
 
 #tutvustus {
-    width: 70%;
+    width: 60%;
     text-align: justify;
     font-size: 0.9em;
     font-weight: 400;
+}
+#tutvustus h1 {
+    margin-bottom: 2em;
 }
 
 #pildidDesktop {
