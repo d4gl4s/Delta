@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/vaheleht2.css" />
+    <title>Delta köök</title>
+  </head>
+  <body>
+    <main>
+      <section id="ava">
+        <h1>Tegevused delta köögis</h1>
+      </section>
+
+      <section id="tutvustus">
+        <p>Delta hoone köögis saab palju erinevaid sööke endale valmistada. Järgnevalt on toodud mõned lihtsamad näited</p>
+        <div class="linkContainer">
+          <p>Liigu tagasi <a href="index.html" class="link">Avalehele</a></p>
+        </div>
+      </section>
+
+      <section id="pildid">
+        <h2>Retseptid</h2>
+        <p class="kirjeldus">Pildile vajutades saad vaadata erinevaid retsepte</p>
+        <div id="pildidDesktop">
+          <div id="piltSuur">
+            <img src="assets/retsept1.png" alt="Retsepti pilt" id="piltSuurElement">
+          </div>
+          <div id="pildidVäiksed">
+            <img src="assets/retsept1.png" alt="Retsepti pilt" class="portraitImage" onclick="muudaPilti(this.src, this.id)">
+            <img src="assets/retsept2.png" alt="Retsepti pilt" class="portraitImage" onclick="muudaPilti(this.src, this.id)">
+            <img src="assets/retsept3.png" alt="Retsepti pilt" class="portraitImage" onclick="muudaPilti(this.src, this.id)">
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr/>
+    <footer>
+      <p class="kirjeldus" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Tagasi Algusesse</p>
+    </footer>
+  </body>
+  <script>
+    function muudaPilti(src, id){
+      document.getElementById("piltSuurElement").src=src;
+      console.log(src)
+      if (id == "3"){
+        document.getElementById("piltSuurElement").classList.add("portraitImage");
+      }else{
+        document.getElementById("piltSuurElement").classList.remove("portraitImage");
+      }
+    }
+  </script>
+</html>
